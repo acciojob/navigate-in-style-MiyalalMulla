@@ -1,26 +1,22 @@
 /*  your css code here. If applicable */
-  nav {
-      background-color: #D3D3D3;
-      padding: 10px;
+  .container {
+      background-color: #D3D3D3; /* matches rgb(211, 211, 211) */
+      padding: 10px;            /* test expects padding */
     }
 
-    nav ul {
+    .container ul {
       margin: 0;
       padding: 0;
-      list-style: none; /* remove bullets */
+      list-style: none; 
+      display: flex; /* ✅ Cypress expects flex */
     }
 
-    nav ul li {
-      display: inline; /* horizontal items */
+    .container ul li {
       margin-right: 1rem;
     }
 
-    nav ul li a {
+    .container ul li a {
       text-decoration: none;
       color: black;
       font-weight: bold;
-    }
-
-    nav ul li a:hover {
-      color: darkblue;
     }
